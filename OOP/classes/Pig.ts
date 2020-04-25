@@ -68,3 +68,22 @@ pig2.getRun(false);
 
 
 
+// var custs: Customer[]= [new Customer("A123"), new Customer("B456")];
+/*
+mypigs[0].getRun(true);
+mypigs[1].getRun(true);
+mypigs[2].getRun(true);
+mypigs[3].getRun(true);
+mypigs[4].getRun(true);
+mypigs[5].getRun(true);
+
+*/
+console.log("====Array of pigs =====");
+let mypigs: Array<Pig> = [new Pig(true), new Pig(true)];
+mypigs[0].getRun(true);
+mypigs[1].getRun(true);
+
+var pigs: Pig[]= [new Pig(true), new Pig(true)];
+console.log("====Array of pigs =====");
+pigs[0].getRun(true);
+pigs[1].getRun(true);
