@@ -1,6 +1,6 @@
 import Animal from "./Animal";
 
-class Pig extends Animal<Body>
+export default class Pig extends Animal<Body>
 {
    
  //getEmployee() 
@@ -78,7 +78,7 @@ mypigs[4].getRun(true);
 mypigs[5].getRun(true);
 
 */
-console.log("====Array of pigs =====");
+console.log("====Array of pigs Array<Pig> =====");
 let mypigs: Array<Pig> = [new Pig(true), new Pig(true)];
 mypigs[0].getRun(true);
 mypigs[1].getRun(true);
