@@ -1,0 +1,49 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+         
+            function ReadCookie() {
+               var allcookies = document.cookie;
+               document.write ("All Cookies : " + allcookies +"<br>");
+               
+               // Get all the cookies pairs in an array
+               cookiearray = allcookies.split(';');
+               
+               // Now take key value pair out of this array
+               for(var i=0; i<cookiearray.length; i++) {
+                  name = cookiearray[i].split('=')[0];
+                  value = cookiearray[i].split('=')[1];
+                  document.write ("Key is : " + name + " and Value is : " + value+"<br>");
+               }
+            }
+         
+      </script> 
+      
+
+   </head>
+   
+   <body>    
+       
+   <script> document.cookie = "username=John777 Doe";</script>   <!-- Set cookie value  -->
+   <script> document.cookie = "username1=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";</script>   <!-- Set cookie value  -->
+<br>
+   <br>
+      <form name = "myform" action = "">
+         <p> click the following button and see the result:</p>
+         <input type = "button" value = "Get Cookie" onclick = "ReadCookie()"/>
+      </form>   
+  
+<br>
+      <script> document.cookie = "dzen=Dzmitry";    
+    let x = document.cookie;
+    document.write(x);  // dont show without action
+    
+    </script>   <!-- Set cookie value  -->
+
+
+
+
+
+
+   </body>
+</html>
